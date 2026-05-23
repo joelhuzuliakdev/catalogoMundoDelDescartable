@@ -6,7 +6,7 @@ export const categories = [
         products: [
         { name: 'Caja Pizza', size: '31 x 31 x 4', unidad: '$200', x50: '$9.200', x100: '$15.700', image:'/cajasCarton/cajaPizza.webp' },
         { name: 'Caja ½ Pizza', size: '15,5 x 31 x 4', unidad: '$120', x50: '$4.400', x100: '$7.500', image:'/cajasCarton/cajaMediaPizza.webp' },
-        { name: 'Caja ½ Metro', size: '25,5 x 55 x 4', unidad: '$400', x50: '$18.600', x100: '$31.800', image:'' },
+        { name: 'Caja ½ Metro', size: '25,5 x 55 x 4', unidad: '$400', x50: '$18.600', x100: '$31.800', image:'/cajasCarton/cajaMedioMetro.webp' },
         { name: 'Caja Empanada', size: '23 x 23 x 5,9', unidad: '$130', x50: '$6.000', x100: '$10.400', image:'/cajasCarton/cajaEmpanada.webp' },
         { name: 'Caja Lomo', size: '19 x 27 x 3', unidad: '$100', x50: '$4.500', x100: '$7.800', image:'/cajasCarton/cajaLomo.webp' },
         { name: 'Caja Pollo', size: '20,5 x 29,5 x 5,5', unidad: '$210', x50: '$9.200', x100: '$15.700', image:'/cajasCarton/cajaPollo.webp' },
@@ -24,12 +24,11 @@ export const categories = [
         name: 'Cajas Microcorrugadas',
         description: 'Cajas premium con mayor resistencia',
         products: [
-        { name: 'Caja Pizza', size: '31 x 31 x 4', unidad: '$300', x50: '$14.300', x100: '$24.300', image:'' },
-        { name: 'Caja Pizza 50x50', size: '50 x 50', unidad: '$900', x50: '$43.100', x100: '$73.900', image:'' },
-        { name: 'Caja Empanada', size: '23 x 23 x 5,9', unidad: '$260', x50: '$11.500', x100: '$19.600', image:'/cajasCartonCorrugado/cajaEmpanadaCorrugada.webp' },
-        { name: 'Caja Lomo', size: '22 x 14 x 9', unidad: '$190', x50: '$8.500', x100: '$14.000', image:'' },
-        { name: 'Caja Hamburguesa 17x17', size: '17 x 17 x 10', unidad: '$350', x50: '$16.130', x100: '$27.400', image:'' },
-        { name: 'Caja Hamburguesa', size: '17 x 17', unidad: '$420', x50: '$16.200', x100: '$27.400', image:'' },
+        { name: 'Caja Pizza Microcorrugada', size: '31 x 31 x 4', unidad: '$300', x50: '$14.300', x100: '$24.300', image:'/cajasCartonCorrugado/cajaPizzaCorrugada.webp' },
+        { name: 'Caja Pizza 50x50 Microcorrugada', size: '50 x 50', unidad: '$900', x50: '$43.100', x100: '$73.900', image:'/cajasCartonCorrugado/cajaPizza50x50Corrugada.webp' },
+        { name: 'Caja Empanada Microcorrugada', size: '23 x 23 x 5,9', unidad: '$260', x50: '$11.500', x100: '$19.600', image:'/cajasCartonCorrugado/cajaEmpanadaCorrugada.webp' },
+        { name: 'Caja Lomo Microcorrugada', size: '22 x 14 x 9', unidad: '$190', x50: '$8.500', x100: '$14.000', image:'/cajasCartonCorrugado/cajaLomoCorrugada.webp' },
+        { name: 'Caja Hamburguesa 17x17', size: '17 x 17 x 10', unidad: '$350', x50: '$16.130', x100: '$27.400', image:'/cajasCartonCorrugado/cajaHamburguesaCorrugada.webp' }
         ]
     },
     {
@@ -128,11 +127,11 @@ export const categories = [
         name: 'Papel',
         description: 'Sulfito, panadería, film y aluminio',
         products: [
-        { name: 'Papel Sulfito 20cm (bobina)', size: '1 kilo', precio: '$2.800', image:'' },
+        { name: 'Papel Sulfito 20cm (bobina)', size: '1 kilo', precio: '$2.800', image:'/papel/rolloSulfito20cm.webp' },
         { name: 'Papel Sulfito 40cm (bobina)', size: '1 kilo / 6kg', precio: '$2.800', image:'/papel/rolloSulfito40cm.webp' },
         { name: 'Papel Sulfito 40cm Panaderia (bobina)', size: '1 kilo / 6kg', precio: '$2.800', image:'/papel/rolloPapelPanaderia40cm.webp' },
-        { name: 'Papel Sulfito 60cm (bobina)', size: '1 kilo / 7,5kg', precio: '$2.800', image:'' },
-        { name: 'Papel Sulfito 80cm (bobina)', size: '1 kilo', precio: '$2.800', image:'' },
+        { name: 'Papel Sulfito 60cm (bobina)', size: '1 kilo / 7,5kg', precio: '$2.800', image:'/papel/rolloSulfito60cm.webp' },
+        { name: 'Papel Sulfito 80cm (bobina)', size: '1 kilo', precio: '$2.800', image:'/papel/rolloSulfito80cm.webp' },
         { name: 'Papel Sulfito 40x50cm (resma)', size: '1 kilo / 12kg', precio: '$2.800 / $31.200', image:'/papel/papelSulfitoPlancha.webp' },
         { name: 'Papel Sulfito 52x72cm (resma)', size: '1 kilo / 12kg', precio: '$2.800 / $31.200', image:'/papel/papelSulfitoPlancha.webp' },
         { name: 'Rollo Film 30x30mtr', size: '-', precio: '$1.300', image:'' },
@@ -154,10 +153,10 @@ export const categories = [
         description: 'Hilos, folex, cubiertos, pinches y más',
         products: [
         { name: 'Hilo Algodón 40gr', size: 'x10', precio: '$400 / $3.800', image:'/complementos/hiloAlgodon40gr.webp' },
-        { name: 'Hilo Algodón 100gr', size: 'x10', precio: '$900 / $8.570', image:'' },
+        { name: 'Hilo Algodón 100gr', size: 'x10', precio: '$900 / $8.570', image:'/complementos/hiloAlgodon100gr.webp' },
         { name: 'Hilo Algodón 300gr', size: 'x10', precio: '$2.000 / $19.000', image:'/complementos/hiloAlgodon300gr.webp' },
         { name: 'Hilo Choricero 40gr', size: 'x10', precio: '$400 / $3.800', image:'/complementos/hiloChoricero40gr.webp' },
-        { name: 'Hilo Choricero 100gr', size: 'x10', precio: '$900 / $8.570', image:'' },
+        { name: 'Hilo Choricero 100gr', size: 'x10', precio: '$900 / $8.570', image:'/complementos/hiloChoricero100gr.webp' },
         { name: 'Hilo Choricero 300gr', size: 'x10', precio: '$2.000 / $19.000', image:'/complementos/hiloChoricero300gr.webp' },
         { name: 'Folex 16x16cm', size: '1kg / 10kg', precio: '$6.600 / $62.900', image:'' },
         { name: 'Folex 18x18cm', size: '1kg / 10kg', precio: '$6.900 / $65.700', image:'' },
@@ -332,21 +331,36 @@ export const categories = [
         ]
     },
     {
+        id: 'frascos',
+        name: 'Frascos',
+        description: 'Frascos de vidrio',
+        products: [
+        { name: 'Camiseta Blanca 20x30', unidad: '$1.000', medio: '20 / $19.000', bulto: '40 / $37.000', image:'' },
+        { name: 'Camiseta Blanca 30x40', unidad: '$1.000', medio: '10 / $9.500', bulto: '20 / $18.500', image:'' },
+        { name: 'Camiseta Blanca 40x50', unidad: '$2.200', medio: '10 / $21.000', bulto: '20 / $40.740', image:'' },
+        { name: 'Camiseta Blanca 45x60', unidad: '$3.300', medio: '10 / $31.430', bulto: '20 / $61.100', image:'' },
+        { name: 'Camiseta Blanca 50x70', unidad: '$4.900', medio: '5 / $23.340', bulto: '10 / $45.370', image:'' },
+        { name: 'Camiseta Blanca 60x90', unidad: '$8.900', medio: '-', bulto: '5 / $41.200', image:'' },
+        { name: 'Camiseta Color 30x40', unidad: '$1.000', medio: '10 / $9.500', bulto: '20 / $18.500', image:'' },
+        { name: 'Camiseta Color 40x50', unidad: '$2.200', medio: '10 / $21.000', bulto: '20 / $40.740', image:'' },
+        ]
+    },
+    {
         id: 'higiene',
         name: 'Higiene',
         description: 'Papel higiénico, toallas y servilletas',
         products: [
         { name: 'Rollo Cocina "Elegante" 3 x 150 paños', unidad: '$2.900', bulto: '8 / $21.100', image:'/higiene/rolloCocinaEleganteX3.webp' },
-        { name: 'Rollo Gastronómico "Kekeres" x 200 paños', unidad: '$2.000', bulto: '12 / $22.900', image:'/higiene/rolloCocinaElegante200p.webp' },
-        { name: 'Rollo Gastronómico "Elegante" x 200 paños', unidad: '$3.600', bulto: '12 / $40.000', image:'' },
-        { name: 'Rollo Toalla Beige "Cleany" x 400mtr', unidad: '$9.600', bulto: '2 / $17.800', image:'' },
-        { name: 'Rollo Toalla Blanco "Cleany" x 400mtr', unidad: '$12.500', bulto: '2 / $23.000', image:'' },
+        { name: 'Rollo Gastronómico "Kekeres" x 200 paños', unidad: '$2.000', bulto: '12 / $22.900', image:'' },
+        { name: 'Rollo Gastronómico "Elegante" x 200 paños', unidad: '$3.600', bulto: '12 / $40.000', image:'/higiene/rolloCocinaElegante200p.webp' },
+        { name: 'Rollo Toalla Beige "Cleany" x 400mtr', unidad: '$9.600', bulto: '2 / $17.800', image:'/higiene/rolloToallaBeigeCleany.webp' },
+        { name: 'Rollo Toalla Blanco "Cleany" x 400mtr', unidad: '$12.500', bulto: '2 / $23.000', image:'/higiene/rolloToallaBlancoCleany.webp' },
         { name: 'Papel Higiénico "Elegante" 4 x 30mtr', unidad: '$2.600', bulto: '12 / $28.300', image:'/higiene/papelHigienicoElegante.webp' },
         { name: 'Papel Higiénico Industrial "Cleany" x 300mtr', unidad: '$1.500', bulto: '8 / $8.400', image:'/higiene/papelHigienicoCleany.webp' },
         { name: 'Servilleta 33x33 "Elegante" x 80unid.', precio: '$1.500', image:'/higiene/servilletaEleganteX80und.webp' },
         { name: 'Servilleta 33x33 "Cleany" x 1000unid.', precio: '$7.400', image:'/higiene/servilletasDePapel.webp' },
         { name: 'Servilleta 18x21 "NewPell" x 1000unid.', precio: '$7.100', image:'/higiene/servilletaConGuarda.webp' },
-        { name: 'Servilleta Servilletero "Barman" x 1000unid.', precio: '$9.000', image:'' },
+        { name: 'Servilleta Servilletero "Barman" x 1000unid.', precio: '$9.000', image:'/higiene/servilletaServilleteroBarman.webp' },
         { name: 'Servilleta Intercalada Blanca x 1000unid.', precio: '$11.000', image:'/higiene/toallasIntercaladas.webp' },
         { name: 'Servilleta Intercalada Beige x 1000unid.', precio: '$10.100', image:'/higiene/toallasIntercaladasBeige.webp' },
         ]

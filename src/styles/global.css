@@ -1,1 +1,10 @@
 @import "tailwindcss";
+#category-nav {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-collapsed {
+    transform: translateY(-150%);
+    opacity: 0;
+    pointer-events: none;
+}

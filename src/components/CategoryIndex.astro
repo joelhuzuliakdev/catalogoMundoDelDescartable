@@ -2,7 +2,11 @@
 import { categories } from '../data/products.js';
 ---
 
-<nav class="bg-white shadow-md sticky top-0 z-40 no-print transition-transform duration-300" id="category-nav">
+<nav 
+    id="category-nav"
+    class="bg-white shadow-md fixed w-full z-40 no-print nav-collapsed"
+    style="top: 56px;"
+>
     <div class="container mx-auto px-4">
         <div class="flex items-center justify-between py-4">
         <h2 class="text-lg font-semibold text-slate-800">Categorías</h2>
@@ -38,58 +42,30 @@ import { categories } from '../data/products.js';
         const categoryMenu = document.getElementById('category-menu');
         const categoryNav = document.getElementById('category-nav');
         const header = document.getElementById('main-header');
-        let lastScroll = 0;
-        
-        menuToggle?.addEventListener('click', () => {
-        categoryMenu?.classList.toggle('hidden');
-        });
 
-        // Handle scroll for both header and category nav
-        window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-        
-        if (currentScroll <= 0) {
-            header?.classList.remove('-translate-y-full');
-            categoryNav?.classList.remove('-translate-y-full');
-            return;
-        }
-        
-        if (currentScroll > lastScroll && currentScroll > 100) {
-            // Scrolling down - hide both
-            header?.classList.add('-translate-y-full');
-            categoryNav?.classList.add('-translate-y-full');
-        } else {
-            // Scrolling up - show both
-            header?.classList.remove('-translate-y-full');
-            categoryNav?.classList.remove('-translate-y-full');
-        }
-        
-        lastScroll = currentScroll;
+        menuToggle?.addEventListener('click', () => {
+            categoryMenu?.classList.toggle('hidden');
         });
 
         // Smooth scroll with offset
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', (e) => {
-            e.preventDefault();
-            const target = document.querySelector(anchor.getAttribute('href'));
-            if (target) {
-            // Show header and nav when clicking
-            header?.classList.remove('-translate-y-full');
-            categoryNav?.classList.remove('-translate-y-full');
-            
-            const headerHeight = header?.offsetHeight || 0;
-            const navHeight = categoryNav?.offsetHeight || 0;
-            const offset = headerHeight + navHeight + 20;
-            const targetPosition = target.offsetTop - offset;
-            
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
+            anchor.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(anchor.getAttribute('href'));
+                if (target) {
+                    const headerHeight = header?.offsetHeight || 0;
+                    const navHeight = categoryNav?.offsetHeight || 0;
+                    const offset = headerHeight + navHeight + 20;
+                    const targetPosition = target.offsetTop - offset;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu
+                    categoryMenu?.classList.add('hidden');
+                }
             });
-            // Close mobile menu
-            categoryMenu?.classList.add('hidden');
-            }
         });
-        });
-  });
+    });
 </script>
